@@ -1,0 +1,19 @@
+{
+  "name": "martes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "dev": "node --watch .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "uuid": "^11.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
