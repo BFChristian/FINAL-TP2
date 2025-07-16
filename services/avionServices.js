@@ -27,8 +27,7 @@ class avionServices {
 
         if (d < 500) {
           alertas.push({
-            alerta: `Alerta de proximidad entre ${avionIngresado.id} y ${otro.id}`,
-            distancia: Math.round(d)
+            alerta: `Alerta de proximidad entre ${avionIngresado.id} y ${otro.id}`
           });
         }
       }
