@@ -1,12 +1,11 @@
 import { Router } from "express";
-import controller from "../container/container.js";
-import nameMidlewareValidate from "../midlewares/nameMidlewareValidate.js";
+import avionContainer from "../container/avionContainer.js";
+import avionMidlewareValidate from "../midlewares/avionMidlewareValidate.js";
 
 const routes = Router();
 
-routes.get("/", controller.getAll);
-routes.get("/:id", controller.getById);
-routes.use(nameMidlewareValidate);
-routes.post("/", controller.create);
+routes.get("/", avionContainer.getAll);
+routes.use(avionMidlewareValidate);
+routes.post("/", avionContainer.crearOActualizar);
 
 export default routes;
